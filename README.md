@@ -9,5 +9,5 @@ Start a game by clicking on "New game"
     starting a new game.
     
 Future fixings : 
-    Reinitialisation of the alien run after collision, 
+    Alien run reinitialisation after collision, 
     Life system implementation 
