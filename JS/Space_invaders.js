@@ -17,7 +17,7 @@ function initPlateau() {
             cell.id = "cell" + i + j;
 
             let img = document.createElement("img");
-            img.src = "img/empty.png";
+            img.src = "../img/empty.png";
 
             cell.appendChild(img);
             ligne.appendChild(cell);

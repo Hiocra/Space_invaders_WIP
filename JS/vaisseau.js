@@ -1,12 +1,12 @@
 var posShipY = hauteur - 1;
-var posShipX = ((largeur - 1) / 2); // Correct calculation for ship position
+var posShipX = ((largeur - 1) / 2); 
 
 function effaceShip() {
-    plateau[posShipY][posShipX].src = "img/empty.png";
+    plateau[posShipY][posShipX].src = "../img/empty.png";
 }
 
 function afficheShip() {
-    plateau[posShipY][posShipX].src = "img/thor.gif";
+    plateau[posShipY][posShipX].src = "../img/thor.gif";
 }
 
 function lancerPartie() {

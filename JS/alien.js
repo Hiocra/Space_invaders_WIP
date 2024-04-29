@@ -6,18 +6,18 @@ var posAlienY = 0;
 function initAlien() {
     posAlienX = 0;
     posAlienY = 0;
-    plateau[posAlienY][posAlienX].src = "img/invader.png";
+    plateau[posAlienY][posAlienX].src = "../img/invader.png";
     parcoursGrille();
 }
 
 function deplaceAlien(x, y) {
    
-    plateau[posAlienY][posAlienX].src = "img/empty.png";
+    plateau[posAlienY][posAlienX].src = "../img/empty.png";
 
     posAlienX = x;
     posAlienY = y;
 
-    plateau[posAlienY][posAlienX].src = "img/invader.png";
+    plateau[posAlienY][posAlienX].src = "../img/invader.png";
 
     setTimeout(function() {
         deplaceAlien(x, y);
@@ -27,7 +27,7 @@ function deplaceAlien(x, y) {
 var direction = "droite";
 
 function parcoursGrille() {
-    plateau[posAlienY][posAlienX].src = "img/empty.png";
+    plateau[posAlienY][posAlienX].src = "../img/empty.png";
 
     if (direction === "droite") {
         if (posAlienX < largeur - 1) {
@@ -55,7 +55,7 @@ function parcoursGrille() {
         }
     }
 
-    plateau[posAlienY][posAlienX].src = "img/invader.png";
+    plateau[posAlienY][posAlienX].src = "../img/invader.png";
 
     if (posShipY === posAlienY && posShipX === posAlienX) { //Check la collision
         console.log("boom");
